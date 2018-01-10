@@ -1,6 +1,6 @@
 # nodejs-update-windows-time-ip
 
-## Update Windows Time from current I.P NodeJS/Electron
+## Update Windows Time from current I.P NodeJS
 
 Requires/
 
