@@ -15,15 +15,16 @@ request('https://timezoneapi.io/api/ip', function(err, res, dat){
 		alert('I.P timezone is '+exacttimezone);
 		/* change timezone */
 		var options = { name: 'Zone' }; 
-    sudo.exec('tzutil /s "'+exacttimezone+'" && time '+exacttime, options,   
-    function(error, stdout, stderr) 
-    {     if (error) { throw error;     console.log('timezone stdout: ' + stdout);  
-    } else {
-		alert('changed timezone to '+exacttimezone);
-		alert('changed time to '+exacttimezone);
+    sudo.exec('tzutil /s "'+exacttimezone+'" && time '+exacttime, options, function(error, stdout, stderr) 
+    {     
+
+	    if (error) { throw error;     console.log('timezone stdout: ' + stdout);  
+   		 } else {
+			alert('changed timezone to '+exacttimezone);
+			alert('changed time to '+exacttimezone);
 		} 
     
-		}
+    }
 		);
 	
     }
