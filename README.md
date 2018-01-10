@@ -1,2 +1,24 @@
-# nodejs-updatewindowstimefromip
-Update Windows Time from current I.P NodeJS/Electron
+# nodejs-update-windows-time-ip
+
+## Update Windows Time from current I.P NodeJS/Electron
+
+Requires/
+
+sudo = require('sudo-prompt');
+
+request = require('request'); 
+
+This code can help you change windows time to current I.P Timezone.
+
+There is no implementation of **DST** ( https://en.wikipedia.org/wiki/Daylight_saving_time ) yet however you can easily implement this by adding a manual change in date and time.
+
+It uses the Windows Utility, **"tzutil"** ( https://msdn.microsoft.com/en-us/library/dn938338(v=vs.85).aspx ) and Windows Utlity, "time".
+
+--> **tzutil** is used to set the timezone ( take note of the DST absense )
+
+--> **time** is used to set the Windows Time without regards to Time Zone.
+
+
+Things to take note of::::
+
+The computer may revert the timezone if 'auto update of date and time through location' is set as the change may be assumed to be accidental.
