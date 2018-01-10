@@ -21,4 +21,4 @@ It uses the Windows Utility, **"tzutil"** ( https://msdn.microsoft.com/en-us/lib
 
 Things to take note of::::
 
-The computer may revert the timezone if 'auto update of date and time through location' is set as the change may be assumed to be accidental.
+The computer may revert the time if set to syncronize with an internet time server but this has not been tested or confirmed.
