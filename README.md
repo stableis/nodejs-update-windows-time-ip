@@ -2,10 +2,10 @@
 
 ## Update Windows Time from current I.P NodeJS
 
-/Install Modules
+//-> Install Modules
 
-npm install -s sudo-prompt
-npm install -s request
+npm install -s sudo-prompt      ( https://www.npmjs.com/package/sudo-prompt )
+npm install -s request          ( https://www.npmjs.com/package/request )
 
 Requires/
 
@@ -27,3 +27,4 @@ It uses the Windows Utility, **"tzutil"** ( https://msdn.microsoft.com/en-us/lib
 Things to take note of::::
 
 The computer may revert the time if set to syncronize with an internet time server but this has not been tested or confirmed.
+
