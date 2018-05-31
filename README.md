@@ -2,6 +2,11 @@
 
 ## Update Windows Time from current I.P NodeJS
 
+/Install Modules
+
+npm install -s sudo-prompt
+npm install -s request
+
 Requires/
 
 sudo = require('sudo-prompt');
